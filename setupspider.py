@@ -135,7 +135,7 @@ class setupspider():
 
     def run(self):
         open(self.scrapy_log_file, 'w').close()
-        log.start(logfile=self.scrapy_log_file, loglevel="DEBUG", logstdout=False)
+        log.start(logfile=self.scrapy_log_file, loglevel="WARNING", logstdout=False)
 
         cur = self.conn.cursor()
         cur.execute('SET NAMES UTF8')
